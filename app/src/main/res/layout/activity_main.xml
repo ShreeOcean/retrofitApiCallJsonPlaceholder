@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/outlinedBtnPosts"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Check APIs For Posts"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/outlinedBtnComments"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Check APIs For Comments"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedBtnPosts" />
+
+    <Button
+        android:id="@+id/outlinedBtnAlbums"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Check APIs For Albums"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedBtnComments" />
+
+    <Button
+        android:id="@+id/outlinedBtnPhotos"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Check APIs For Photos"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedBtnAlbums" />
+
+    <Button
+        android:id="@+id/outlinedBtnTodos"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Check APIs For Todos"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedBtnPhotos" />
+
+    <Button
+        android:id="@+id/outlinedBtnUsers"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:text="Check APIs For Users"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedBtnTodos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
