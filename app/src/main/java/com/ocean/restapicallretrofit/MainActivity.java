@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.ocean.restapicallretrofit.comments.CommentsActivity;
 import com.ocean.restapicallretrofit.databinding.ActivityMainBinding;
 import com.ocean.restapicallretrofit.posts.ActivityPost;
 import com.ocean.restapicallretrofit.posts.PostResposnse;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mainBinding.outlinedBtnComments.setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, ActivityPost.class));
+            startActivity(new Intent(MainActivity.this, CommentsActivity.class));
         });
     }
 }
