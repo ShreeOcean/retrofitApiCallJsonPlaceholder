@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppRestApiCallRetrofit">
         <activity
+            android:name=".users.UsersDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".todos.TodoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".photos.PhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".albums.AlbumsActivity"
+            android:exported="false" />
+        <activity
             android:name=".comments.CommentsActivity"
             android:exported="false" />
         <activity

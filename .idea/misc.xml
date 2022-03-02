@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/activity_albums.xml" value="0.1578125" />
         <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/activity_comments.xml" value="0.1578125" />
         <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/activity_photo.xml" value="0.1578125" />
         <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/activity_post.xml" value="0.14375" />
+        <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/activity_users_details.xml" value="0.1578125" />
+        <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/album_custom_listview.xml" value="0.1578125" />
         <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/custom_comments_listview_items.xml" value="0.1578125" />
         <entry key="..\:/ChetuTrainingTaskAndroid/MyAppRestApiCallRetrofit/app/src/main/res/layout/custom_posts_listview_items.xml" value="0.1578125" />
       </map>
