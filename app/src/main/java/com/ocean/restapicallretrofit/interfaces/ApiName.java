@@ -12,4 +12,6 @@ public interface ApiName {
     @GET("/posts")
     Call<List<PostResposnse>> getPostsData();
 
+
+
 }

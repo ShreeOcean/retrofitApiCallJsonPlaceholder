@@ -25,7 +25,6 @@ public class ActivityPost extends AppCompatActivity {
 
     ActivityPostBinding postBinding;
     ProgressDialog progressDialog;
-    PostResposnse postResposnse;
     ListAdapter listAdapter;
 
     @Override
@@ -48,8 +47,8 @@ public class ActivityPost extends AppCompatActivity {
                 if (response.isSuccessful() && response.code() == 200){
                     List<PostResposnse> postsResponses = response.body();
                     for (PostResposnse postData : postsResponses){
-
-                        //listAdapter = new ListAdapter(getApplicationContext(), R.layout.custom_posts_listview_items,postsResponses);
+                        progressDialog.hide();
+                        listAdapter = new ListAdapter(postsResponses, getApplicationContext());
                         postBinding.listView.setAdapter(listAdapter);
 
                         Log.d("DATA:", postData.getUserId()+"\n"+postData.getUserId()+"\n"+postData.getTitle()+"\n"+postData.getBody());

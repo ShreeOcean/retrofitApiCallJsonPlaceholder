@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppRestApiCallRetrofit">
         <activity
+            android:name=".comments.CommentsActivity"
+            android:exported="false" />
+        <activity
             android:name=".posts.ActivityPost"
             android:exported="true" />
         <activity
@@ -23,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

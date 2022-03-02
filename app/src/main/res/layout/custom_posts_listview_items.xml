@@ -13,6 +13,7 @@
         android:hint="tittle to show"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:background="#39B9F6CA"
         android:textColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +27,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="19sp"
+        android:background="#48EA80FC"
         android:hint="posts api body to show"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_tittle" />

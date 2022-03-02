@@ -24,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
             //Intent intent = new Intent(MainActivity.this, PostResposnse.class);
             startActivity(new Intent(MainActivity.this, ActivityPost.class));
         });
+
+        mainBinding.outlinedBtnComments.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, ActivityPost.class));
+        });
     }
 }
