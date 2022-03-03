@@ -40,12 +40,14 @@ public class ListAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         view = LayoutInflater.from(context).inflate(R.layout.custom_posts_listview_items, viewGroup,false);
+
         TextView tvTittle = view.findViewById(R.id.tv_tittle);
         TextView tvBody = view.findViewById(R.id.tv_body);
+
         PostResposnse data = list.get(i);
 
-        tvTittle.setText(data.getTitle());
-        tvBody.setText(data.getBody());
+        tvTittle.setText("Title : "+data.getTitle());
+        tvBody.setText("Post Body : "+data.getBody());
         return view;
     }
 }

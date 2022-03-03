@@ -7,10 +7,12 @@
     tools:context=".users.UsersDetailsActivity">
 
     <ListView
+        android:id="@+id/listView_userDetails"
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

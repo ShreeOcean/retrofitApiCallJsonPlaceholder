@@ -50,7 +50,7 @@ public class AlbumsActivity extends AppCompatActivity {
                         albumListAdapter = new AlbumListAdapter(albumsResponses, getApplicationContext());
                         albumsBinding.albumsListView.setAdapter(albumListAdapter);
 
-                        Log.d("DATA:", albumData.getUserId()+"\n"+albumData.getUserId()+"\n"+albumData.getTittle());
+                        //Log.d("DATA:", albumData.getUserId()+"\n"+albumData.getUserId()+"\n"+albumData.getTittle());
                     }
                 }
             }

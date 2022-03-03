@@ -27,6 +27,7 @@ public class CommentsActivity extends AppCompatActivity {
     CommentsRecyclerViewAdapter recyclerViewAdapter;
     CustomCommentsListviewItemsBinding commentsListviewItemsBinding;
     List<CommentsResponse> commentsResponses;
+    CommentsListViewAdapter listViewAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +41,10 @@ public class CommentsActivity extends AppCompatActivity {
         progressDialog.setCancelable(false);
         progressDialog.show();
 
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        commentsBinding.recyclerViewCommentsActivity.setLayoutManager(linearLayoutManager);
-        //recyclerViewAdapter = new CommentsRecyclerViewAdapter(commentsResponses, getApplicationContext());
-        commentsBinding.recyclerViewCommentsActivity.setAdapter(recyclerViewAdapter);
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+//        commentsBinding.recyclerViewCommentsActivity.setLayoutManager(linearLayoutManager);
+//        //recyclerViewAdapter = new CommentsRecyclerViewAdapter(commentsResponses, getApplicationContext());
+//        commentsBinding.recyclerViewCommentsActivity.setAdapter(recyclerViewAdapter);
 
         ApiName apiName = RetrofitApi.getInstance(ApiName.class);
         Call<List<CommentsResponse>> call = apiName.getCommentsData();
@@ -54,6 +55,9 @@ public class CommentsActivity extends AppCompatActivity {
                     commentsResponses = response.body();
                     for (CommentsResponse commentData : commentsResponses){
                         progressDialog.hide();
+
+                        listViewAdapter = new CommentsListViewAdapter(commentsResponses, getApplicationContext());
+                        commentsBinding.listViewComments.setAdapter(listViewAdapter);
 //                        recyclerViewAdapter = new CommentsRecyclerViewAdapter();
 //                        commentsBinding.recyclerViewCommentsActivity.setAdapter(recyclerViewAdapter);
                     }

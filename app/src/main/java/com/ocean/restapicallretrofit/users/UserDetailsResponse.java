@@ -28,6 +28,17 @@ public class UserDetailsResponse {
     @SerializedName("company")
     private CompanyPojo companyData;
 
+    public UserDetailsResponse(int id, String name, String userName, String email, String phone, String webSite, AddressPojo addressData, CompanyPojo companyData) {
+        this.id = id;
+        this.name = name;
+        this.userName = userName;
+        this.email = email;
+        this.phone = phone;
+        this.webSite = webSite;
+        this.addressData = addressData;
+        this.companyData = companyData;
+    }
+
     public int getId() {
         return id;
     }

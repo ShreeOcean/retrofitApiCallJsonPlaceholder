@@ -6,18 +6,28 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_heading_size"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="POSTS"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/tv_tittle"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:background="#39B9F6CA"
         android:hint="tittle to show"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:background="#39B9F6CA"
         android:textColor="@color/purple_700"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/tv_body"

@@ -1,23 +1,23 @@
-package com.ocean.restapicallretrofit.albums;
+package com.ocean.restapicallretrofit.photos;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ocean.restapicallretrofit.R;
-import com.ocean.restapicallretrofit.posts.PostResposnse;
 
 import java.util.List;
 
-public class AlbumListAdapter extends BaseAdapter {
+public class PhotoListAdapter extends BaseAdapter {
 
-    private List<AlbumsResponse> list;
+    private List<PhotoResponse> list;
     private Context context;
 
-    public AlbumListAdapter(List<AlbumsResponse> list, Context context) {
+    public PhotoListAdapter(List<PhotoResponse> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -40,15 +40,13 @@ public class AlbumListAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
-        view = LayoutInflater.from(context).inflate(R.layout.album_custom_listview, viewGroup,false);
+        view = LayoutInflater.from(context).inflate(R.layout.custom_photo_listview, viewGroup, false);
+        TextView tv_title = view.findViewById(R.id.tv_photo_title);
+        ImageView imageView_photo = view.findViewById(R.id.imageView_photo);
 
-        TextView tvTittle = view.findViewById(R.id.tv_album_tittle);
-        TextView tvId = view.findViewById(R.id.tv_album_id);
-
-        AlbumsResponse albumData = list.get(i);
-
-        tvTittle.setText(albumData.getTittle());
-        tvId.setText(albumData.getId());
+        PhotoResponse photoData = list.get(i);
+        tv_title.setText(photoData.getTitle());
+        imageView_photo.setImageURI(photoData.getUrl());
         return view;
     }
 }
