@@ -121,23 +121,26 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="2">
+                android:layout_height="50dp">
 
                 <TextView
                     android:textSize="@dimen/text_heading_size"
-                    android:layout_weight="1.5"
                     android:text="Location"
                     android:textColor="@color/black"
                     android:textAllCaps="true"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"/>
                 <TextView
                     android:id="@+id/tv_userdetails_location"
-                    android:layout_weight=".5"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:textSize="@dimen/text_size"/>
+
+                <ImageButton
+                    android:id="@+id/imageBtnLocation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_location_on_24" />
 
             </LinearLayout>
             <LinearLayout
